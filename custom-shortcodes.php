@@ -232,7 +232,7 @@ function enable_controls_function(){
 		$returnst .= '<div><span class="bold">Uname: </span>'.$serverHost.'</div>';
 		$returnst .= '<h4 style="font-size:20px;">WARNING! Only click on the buttons if you know what you are doing!</h4>';
 		$returnst .= '<div align="center" class="filter">
-				<form action="https://klabausterbeere.xyz/wp-admin/admin-ajax.php" method="POST" id="filter">
+				<form action="/wp-admin/admin-ajax.php" method="POST" id="filter">
 					<button id="button_A" class="button-4 buttongreen button_B" value="re" name="filterLetter">Refresh</button>
 					<input type="hidden" name="action" value="myfilter">
 					<input type="hidden" name="serviceType" value="nix">
@@ -250,19 +250,19 @@ function enable_controls_function(){
 		$returnst .= '<p></p> ';
 		
 		$returnst .= '<div align="center" class="filter">
-						<form action="https://klabausterbeere.xyz/wp-admin/admin-ajax.php" method="POST" id="filter">
+						<form action="/wp-admin/admin-ajax.php" method="POST" id="filter">
 							<button id="button_A" class="button-4 buttonred button_B" value="reboot" name="filterLetter">Server Reboot</button>
 							<input type="hidden" name="action" value="myfilter">
 							<input type="hidden" name="serviceType" value="cmd">
 							<input type="hidden" name="act" value="stop">
 						</form>	
-						<form action="https://klabausterbeere.xyz/wp-admin/admin-ajax.php" method="POST" id="filter">						
+						<form action="/wp-admin/admin-ajax.php" method="POST" id="filter">						
 							<button class="button-4 button_B buttonorange" value="clean" name="filterLetter">Clean Cache</button>
 							<input type="hidden" name="action" value="myfilter">
 							<input type="hidden" name="serviceType" value="cmd">
 							<input type="hidden" name="act" value="stop">
 						</form>	
-						<form action="https://klabausterbeere.xyz/wp-admin/admin-ajax.php" method="POST" id="filter">							
+						<form action="/wp-admin/admin-ajax.php" method="POST" id="filter">							
 							<button class="button-4 button_B buttonorange" value="sinus" name="filterLetter">Sinusbot Debug</button>
 							<input type="hidden" name="action" value="myfilter">
 							<input type="hidden" name="serviceType" value="cmd">
@@ -272,7 +272,7 @@ function enable_controls_function(){
 /* 		$returnst .= '<div id="response" class="newTitle">
 							<h3 align="center">Please press the button to test</h3>
 					</div>'; */
-		$returnst .= '<div id="loading" style="display:none"><img src="https://klabausterbeere.xyz/load.gif" /></div><h4><div id="results">Please wait, still loading!</div></h4>';
+		$returnst .= '<div id="loading" style="display:none"><img src=load.gif" /></div><h4><div id="results">Please wait, still loading!</div></h4>';
 		$returnst .= '<br><br><a href="'.wp_logout_url($redirect = home_url()).'">Logout</a></p><br><br><span class="madeby">VPS Manager v1.0 made by <a href="https://karich.design/">Karich.Design</a></span></div>';
 
 		$returnst .= '<script>
@@ -314,7 +314,7 @@ function enable_controls_function(){
 								var filter = $(\'#filter\');
 								$(\'#loading\').show();
 								$.ajax({
-									url:\'https://klabausterbeere.xyz/wp-admin/admin-ajax.php\',
+									url:\'/wp-admin/admin-ajax.php\',
 									data:formData,
 									type: "post", // POST
 									beforeSend:function(xhr){
@@ -355,7 +355,6 @@ function enable_controls_function(){
 		//$returnst .= checkService('valheim','Valheim', false, "Game Server");
 		$returnst .= checkService('matrix-synapse','Matrix', true, "Message Server", true);
 		$returnst .= '<br><br><a href="'.wp_login_url($redirect = home_url()).'">Login</a> to control Server';
-		//$returnst .= '<a href="http://klabausterbeere.xyz/wp-login.php">Login</a> to Serveradmin-Panel';
 		$returnst .= '</div>';
 	}
 	
@@ -400,7 +399,7 @@ function checkDockerService($service, $servicename, $descript, $isPublic){
 							<input type="hidden" name="serviceType" value="docker">
 							<input type="hidden" name="act" value="stop">
 							</form>
-							<form action="https://klabausterbeere.xyz/wp-admin/admin-ajax.php" method="POST" id="filter">
+							<form action="/wp-admin/admin-ajax.php" method="POST" id="filter">
 							<button class="button_B button-4 buttonorange" value="'.$service.'" name="filterLetter">restart</button>
 							<input type="hidden" name="action" value="myfilter">
 							<input type="hidden" name="serviceType" value="docker">
@@ -412,7 +411,7 @@ function checkDockerService($service, $servicename, $descript, $isPublic){
 			$returnstring = '	<div class="boxcontrol" align="center">
 							<div class="boxcontrolchild"><h2 class="boxcontroltitle">'.$servicename.'</h2><p>'.$descript.'</p></div>
 							<div><h4 class="boxcontrolnotactive">&#10060; OFFLINE</h4></div>
-							<form action="https://klabausterbeere.xyz/wp-admin/admin-ajax.php" method="POST" id="filter">
+							<form action="/wp-admin/admin-ajax.php" method="POST" id="filter">
 							<button class="button_B button-4 buttongreen" value="'.$service.'" name="filterLetter">start</button>
 							<input type="hidden" name="action" value="myfilter">
 							<input type="hidden" name="serviceType" value="docker">
@@ -454,13 +453,13 @@ function checkService($service, $servicename, $status, $descript, $isPublic){
 				$returnstring = '	<div class="boxcontrol" align="center">
 								<div class="boxcontrolchild"><h2 class="boxcontroltitle">'.$servicename.'</h2><p>'.$descript.'</p></div>
 								<div><h4 class="boxcontrolactive">&#9989; ONLINE</h4></div>
-								<form action="https://klabausterbeere.xyz/wp-admin/admin-ajax.php" method="POST" id="filter">
+								<form action="/wp-admin/admin-ajax.php" method="POST" id="filter">
 								<button class="button_B button-4 buttonred" value="'.$service.'" name="filterLetter">stop</button>
 								<input type="hidden" name="action" value="myfilter">
 								<input type="hidden" name="serviceType" value="service">
 								<input type="hidden" name="act" value="stop">
 								</form>
-								<form action="https://klabausterbeere.xyz/wp-admin/admin-ajax.php" method="POST" id="filter">
+								<form action="/wp-admin/admin-ajax.php" method="POST" id="filter">
 								<button class="button_B button-4 buttonorange" value="'.$service.'" name="filterLetter">restart</button>
 								<input type="hidden" name="action" value="myfilter">
 								<input type="hidden" name="serviceType" value="service">
@@ -473,7 +472,7 @@ function checkService($service, $servicename, $status, $descript, $isPublic){
 				$returnstring = '	<div class="boxcontrol" align="center">
 								<div class="boxcontrolchild"><h2 class="boxcontroltitle">'.$servicename.'</h2><p>'.$descript.'</p></div>
 								<div><h4 class="boxcontrolnotactive">&#10060; OFFLINE</h4></div>
-								<form action="https://klabausterbeere.xyz/wp-admin/admin-ajax.php" method="POST" id="filter">
+								<form action="/wp-admin/admin-ajax.php" method="POST" id="filter">
 								<button class="button_B button-4 buttongreen" value="'.$service.'" name="filterLetter">start</button>
 								<input type="hidden" name="action" value="myfilter">
 								<input type="hidden" name="serviceType" value="service">
