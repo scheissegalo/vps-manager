@@ -1,0 +1,198 @@
+/*
+Theme Name:   WPB Child Theme
+Theme URI:    https://www.wpbeginner.com/
+Description:  A Twenty Twenty-One child theme 
+Author:       Scheissegalo
+Author URI:   https://www.wpbeginner.com
+Template:     twentytwentytwo
+Version:      1.0.0
+Text Domain:  twentytwentyonechild
+*/
+
+.boxcontrol form{
+    display: inline-block; //Or display: inline; 
+}
+
+.filter form{
+    display: inline-block; //Or display: inline; 
+}
+
+.boxcontrol{
+	display: inline-block;
+	padding:0px 5px 0px 5px;
+	margin-left:10px;
+	margin-top:10px;
+	background-color:#ccc;
+	min-width:100px;
+	text-transform:uppercase;
+	border-radius: 15px;
+	box-shadow: 5px 5px 8px #888888;
+}
+
+.boxcontrolchild p{
+	margin-top:-25px;
+	font-size:12px;
+}
+
+.boxcontrol h2{
+	font-size:24px;
+}
+
+.boxcontrol h4{
+	font-size:18px;
+}
+
+.boxcontrolactive{
+	color:green;
+}
+
+.boxcontrolnotactive{
+	color:red;
+}
+
+.boxcontroltitle{
+	padding:5px 5px 5px 5px;
+}
+
+.controlholder{
+	min-height:200px;
+	background-color:#ffe3e3;
+	max-width:none !important;
+	padding:10px 10px 35px 10px;
+}
+
+
+/* CSS */
+.button-4 {
+  appearance: none;
+  background-color: #FAFBFC;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #24292E;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 6px 16px;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+	margin-bottom:8px;
+}
+
+.button-4:hover {
+  background-color: #F3F4F6;
+  text-decoration: none;
+  transition-duration: 0.1s;
+}
+
+button:disabled,
+button[disabled]{
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.buttonred{
+	background-color:red;
+}
+
+.buttongreen{
+	background-color:green;
+}
+
+.buttonorange{
+	background-color:orange;
+}
+
+.bold{
+	font-weight:600;
+}
+
+.bggreen{
+	background-color:#ccffcc;
+}
+
+
+
+
+/* https://github.com/LeoWinterDE/TS3ServerStatusViewer */
+
+.ts3ssv, .ts3ssverror{
+	background-color: rgba(256,256,256,0.5);
+	width: 450px;
+}
+
+.ts3ssv, .ts3ssv *, .ts3ssverror{
+	color: #00000;
+	font-family: Verdana;
+	font-size: 10px;
+}
+
+.ts3ssv label{
+	border-bottom: 1px solid #aaaaaa;
+}
+
+.ts3ssvItem a{
+	color: #000000;
+}
+
+.ts3ssvItem a:hover{
+	background-color: #f6f6f6;
+	color: #000099;
+}
+
+.ts3ssverror{
+	color: #ff0000;
+}
+
+.ts3ssv, .ts3ssv *{
+	vertical-align: middle;
+	margin: 0;
+	padding: 0;
+}
+
+.ts3ssv{
+	position: relative;
+	overflow: hidden;
+}
+
+.ts3ssv label{
+	display: block;
+	padding: 2px 0;
+}
+
+.ts3ssvItem{
+	margin-left: 16px;
+	position: relative;
+	white-space:nowrap;
+}
+
+.ts3ssvItem a{
+	display: block;
+	text-decoration: none !important;
+}
+
+.ts3ssvItem img{
+	border: 0;
+	vertical-align: middle;
+	margin-right: 2px;
+}
+
+.ts3ssvFlags{
+	#position: absolute;
+	#right: 0;
+	#top: 0;
+}
+
+.ts3ssvServer{
+	margin-left: 0;
+}
