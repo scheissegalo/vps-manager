@@ -106,30 +106,30 @@ function menuButtons() {
 	$contents = '';
 	if ( is_user_logged_in() ) {
 		$contents .= '<div class="wp-block-button is-style-fill">
-						<a class="wp-block-button__link has-vivid-red-background-color has-background" href="https://phpmyadmin.klabausterbeere.xyz/" style="border-radius:15px" target="_blank" rel="https://sinusbot.klabausterbeere.xyz noopener">
+						<a class="wp-block-button__link has-vivid-red-background-color has-background" href="#" style="border-radius:15px" target="_blank" rel="# noopener">
 							PHP My Admin
 						</a>
 					</div>';
 	}
 	
 	$contents .= '<div class="wp-block-button is-style-fill">
-					<a class="wp-block-button__link has-vivid-red-background-color has-background" href="https://sinusbot.klabausterbeere.xyz" style="border-radius:15px" target="_blank" rel="https://sinusbot.klabausterbeere.xyz noopener">
+					<a class="wp-block-button__link has-vivid-red-background-color has-background" href="#" style="border-radius:15px" target="_blank" rel="# noopener">
 						Sinusbot
 					</a>
 				</div>';
 				
 	$contents .= '<div class="wp-block-button is-style-fill">
-					<a class="wp-block-button__link has-vivid-red-background-color has-background" href="https://chat.klabausterbeere.xyz/" style="border-radius:15px" target="_blank" rel="https://chat.klabausterbeere.xyz/ noopener">
+					<a class="wp-block-button__link has-vivid-red-background-color has-background" href="#" style="border-radius:15px" target="_blank" rel="# noopener">
 						KB-Chat
 					</a>
 				</div>';
 	$contents .= '<div class="wp-block-button is-style-fill">
-					<a class="wp-block-button__link has-vivid-red-background-color has-background" href="https://forum.klabausterbeere.xyz/" style="border-radius:15px" target="_blank" rel="https://forum.klabausterbeere.xyz/" noopener">
+					<a class="wp-block-button__link has-vivid-red-background-color has-background" href="#" style="border-radius:15px" target="_blank" rel="# noopener">
 						Forum
 					</a>
 				</div>';
 	$contents .= '<div class="wp-block-button is-style-fill">
-					<a class="wp-block-button__link has-vivid-red-background-color has-background" href="https://ronaroller.klabausterbeere.xyz/" style="border-radius:15px" target="_blank" rel="https://ronaroller.klabausterbeere.xyz/" noopener">
+					<a class="wp-block-button__link has-vivid-red-background-color has-background" href="#" style="border-radius:15px" target="_blank" rel="# noopener">
 						Rona Roller
 					</a>
 				</div>';
