@@ -5,7 +5,7 @@
 jQuery(function($){
 	$('#loading').show();
 	$.ajax({
-		url:'https://klabausterbeere.xyz/wp-admin/admin-ajax.php',
+		url:'/wp-admin/admin-ajax.php',
 		data:{action: "myfilter", serviceType: "none", filterLetter: "none"},
 		type: "post", // POST
 		beforeSend:function(xhr){
