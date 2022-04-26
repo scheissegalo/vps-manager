@@ -12,7 +12,7 @@ include('custom-shortcodes.php');
 function my_login_logo() { ?>
     <style type="text/css">
         #login h1 a, .login h1 a {
-            background-image: url(https://klabausterbeere.xyz/wp-content/uploads/2022/04/minilogo.png);
+            background-image: url(/wp-content/uploads/2022/04/minilogo.png);
 		height:65px;
 		width:65px;
 		background-size: 65px 65px;
